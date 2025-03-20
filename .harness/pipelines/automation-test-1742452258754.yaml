@@ -1,0 +1,33 @@
+pipeline:
+  name: Build automation-test
+  identifier: Build_VikasHaritwal93_automation_test_1742452263610
+  projectIdentifier: CIE2ETestProjectWmdj086BZP
+  orgIdentifier: default
+  stages:
+    - stage:
+        name: Build
+        identifier: Build
+        type: CI
+        spec:
+          cloneCodebase: true
+          execution:
+            steps:
+              - step:
+                  type: Run
+                  name: Echo Welcome Message
+                  identifier: Echo_Welcome_Message
+                  spec:
+                    shell: Sh
+                    command: echo "Welcome to Harness CI"
+          platform:
+            os: Linux
+            arch: Amd64
+          runtime:
+            type: Cloud
+            spec: {}
+  properties:
+    ci:
+      codebase:
+        connectorRef: account.Github_OAuth_1742452246268
+        repoName: VikasHaritwal93/automation-test
+        build: <+input>
