@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_VikasHaritwal93_automation_test_1742452263610-pr-trigger-input-set
+  identifier: Build_VikasHaritwal93_automation_test_1742452263610prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: CIE2ETestProjectWmdj086BZP
+  pipeline:
+    identifier: Build_VikasHaritwal93_automation_test_1742452263610
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
